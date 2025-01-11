@@ -16,6 +16,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Check all environment variables
+        run: printenv
+  
+      # Listing directory structure
+      - name: List directory structure
+        run: |
+          pwd  # Mostra o diretório atual
+          ls -R  # Lista todos os arquivos e subdiretórios recursivamente      
+
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
