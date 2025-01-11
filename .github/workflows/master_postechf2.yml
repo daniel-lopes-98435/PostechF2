@@ -69,5 +69,4 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'postechf2'
-          slot-name: 'Production'
           package: ./publish
